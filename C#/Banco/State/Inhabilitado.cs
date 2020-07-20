@@ -3,12 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Banco.Modelo
+namespace Banco.State
 {
-    public class Inhabilitado : Estado
+    public class Inhabilitado : IEstado
     {
-
-        public Inhabilitado() { }
 
         public void retirarSaldo(float saldoARet)
         {

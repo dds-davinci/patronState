@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Banco.Modelo
+namespace Banco.State
 {
-    public interface Estado
+    public interface IEstado
     {
 
         void retirarSaldo(float saldoARet);

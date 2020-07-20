@@ -13,5 +13,5 @@ No debe preocuparse por el control del saldo de la cuenta.
 Usted debe crear la clase TarjetaDeDebito y todas aquellas clases que crea correspondiente.
 
 ## Modelo Solución
-![Modelo](/modelo.png?raw=true)
+![Modelo](/UML/modelo.png?raw=true)
 

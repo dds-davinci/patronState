@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Banco.Modelo
+using Banco.State;
+
+namespace Banco
 {
     public class TarjetaDeDebito
     {
 
         private string nombre;
         private string numero;
-        private Estado estado = new Normal();
+        private IEstado estado = new Normal();
 
         public TarjetaDeDebito(string nombre, string numero)
         {
@@ -22,7 +24,7 @@ namespace Banco.Modelo
             estado.retirarSaldo(saldoARetirar);
         }
 
-        public void cambiarEstado(Estado estado)
+        public void cambiarEstado(IEstado estado)
         {
             this.estado = estado;
         }

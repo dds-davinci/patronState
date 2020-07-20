@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Banco.Modelo
+namespace Banco.State
 {
-    public class Normal : Estado
+    public class Normal : IEstado
     {
-
-        public Normal() { }
 
         public void retirarSaldo(float saldoARet)
         {
